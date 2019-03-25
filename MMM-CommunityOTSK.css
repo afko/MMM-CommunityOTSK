@@ -4,6 +4,10 @@
    padding: 5px;
 }
 
+#WRAPDIV{
+   display: inline;
+}
+
 #COMM {
    position: relative;
    font-size: 0.9rem; 
@@ -15,15 +19,12 @@
 
 #IMG {
    border-radius: 1em;
-   float: left;
+
 }
 
 #NAME {
    font-size: 1.5rem;
    font-weight: bold;
-   float: left;
+
 }
 
-#CONTENTS{
-   position: relative;
-}
