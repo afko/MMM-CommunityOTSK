@@ -56,8 +56,8 @@ Module.register('MMM-CommunityOTSK', {
 
 
             div1.innerHTML = "** OTSK Community Notice **";
-            div2.innerHTML = "";
-            div2.appendChild(p);
+            div2.appendChild(p1);
+            div2.appendChild(p2);
 
             div3.innerHTML = "This is div3";
 
