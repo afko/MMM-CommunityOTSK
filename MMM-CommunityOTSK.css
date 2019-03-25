@@ -1,3 +1,5 @@
+
+
 #DIV2 {
    display: inline;
 
@@ -12,16 +14,18 @@
 }
 
 #PP {
+   font-size: 1.2rem;
    background-color: blue;
 }
 
 #IMG {
    border-radius: 1.5rem;
+   display: inline;
 }
 
 .center {
    margin: auto;
    padding: 5px;
    text-align: center;
-   width: 50%;
+   width: 70%;
 }
