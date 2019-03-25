@@ -5,12 +5,13 @@
 import json
 from selenium import webdriver
 
-def toJson(news_dict):
+def toJson(comm_dict):
     with open('community.json', 'w', encoding='utf-8') as file :
-        json.dump(news_dict, file, ensure_ascii=False, indent='\t')
+        json.dump(comm_dict, file, ensure_ascii=False, indent='\t')
 
 # chrome is executed in background
 options = webdriver.ChromeOptions()
+options.add_argument(r"user-data-dir=path/to/your/chrome/default")
 options.add_argument('headless')
 
 chrome = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", chrome_options=options)
