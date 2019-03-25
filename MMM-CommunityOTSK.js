@@ -43,6 +43,7 @@ Module.register('MMM-CommunityOTSK', {
         var div1 = document.createElement("div");
         var div2 = document.createElement("div");
         div2.id = "DIV2";
+        div2.className = "center";
         var div3 = document.createElement("div");
         div3.id = "DIV3";
 
