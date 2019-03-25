@@ -1,7 +1,7 @@
 #WRAPPER {
    width: 300px;
    border: 0.5px solid grey;
-   padding: 3px;
+   padding: 5px;
 }
 #DIV1 {
    font-size: 1.3rem;
@@ -18,7 +18,7 @@
    overflow: hidden;
    line-break: inherit;
    font-size: 1rem;
-   overflow:scroll;
+   overflow-y: scroll;
 }
 
 #PP {
