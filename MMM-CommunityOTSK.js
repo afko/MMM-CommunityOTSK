@@ -54,14 +54,13 @@ Module.register('MMM-CommunityOTSK', {
         divContents.id ="CONTENTS"
 
         if (this.dataFile) {
-            wrapper.innerHTML = ""
 
             img.src = this.dataFile[this.config.commNum].img;
             divImgName.appendChild(img);
-            divName.innerHTML += this.dataFile[this.config.commNum].writter;
+            divName.innerHTML = this.dataFile[this.config.commNum].writter;
             divImgName.appendChild(divName)
 
-            divContents.innerHTML += this.dataFile[this.config.commNum].contents;
+            divContents.innerHTML = this.dataFile[this.config.commNum].contents;
 
             wrapper.appendChild(divImgName);
             wrapper.appendChild(divContents);
