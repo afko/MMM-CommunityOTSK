@@ -47,14 +47,13 @@ Module.register('MMM-CommunityOTSK', {
         wrapper.id = "COMM";
 
         divImgName.id = "WRAPDIV"
-        divImgName.className = "center";
         img.id = "IMG";
         divName.id = "NAME"
 
         divContents.id ="CONTENTS"
 
         if (this.dataFile) {
-
+            wrapper.innerHTML = "OTSK Community Notice";
             img.src = this.dataFile[this.config.commNum].img;
             divImgName.appendChild(img);
             divName.innerHTML = this.dataFile[this.config.commNum].writter;
