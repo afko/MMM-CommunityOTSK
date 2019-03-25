@@ -61,7 +61,7 @@ Module.register('MMM-CommunityOTSK', {
             p.appendChild(img);
             p.appendChild(pWritter);
 
-            div1.innerHTML = "** OTSK Community Notice **" + " #"+this.config.commNum ;
+            div1.innerHTML = "* OTSK Community Notice *" + " #"+this.config.commNum ;
             div2.appendChild(p);
 
             div3.innerHTML = this.dataFile[this.config.commNum].contents;
