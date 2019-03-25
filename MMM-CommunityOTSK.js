@@ -42,6 +42,7 @@ Module.register('MMM-CommunityOTSK', {
         wrapper.id = "WRAPPER";
         wrapper.className = "center";
         var div1 = document.createElement("div");
+        div1.id = "DIV1";
         var div2 = document.createElement("div");
         div2.id = "DIV2";
         div2.className = "center";

@@ -1,7 +1,11 @@
 #WRAPPER {
    width: 300px;
+   border: 1px solid grey;
 }
+#DIV1 {
+   font-size: 1.3rem;
 
+}
 #DIV2 {
    display: inline;
 
