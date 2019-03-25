@@ -2,7 +2,7 @@
    margin: auto;
    width: 50%;
    padding: 5px;
- }
+}
 
 #COMM {
    font-size: 0.9rem; 
@@ -19,6 +19,6 @@
 
 #NAME {
    font-size: 1.5rem;
-   background-color: white;
+   font-weight: bold;
    float: left;
 }

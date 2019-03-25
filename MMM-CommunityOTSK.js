@@ -38,27 +38,33 @@ Module.register('MMM-CommunityOTSK', {
     getDom: function () {
 
         var wrapper = document.createElement("div");
-
+        
+        var divImgName = document.createElement("div");
         var img = document.createElement("img");
         var divName = document.createElement("div");
         var divContents = document.createElement("div");
 
         wrapper.id = "COMM";
         wrapper.className = "center";
+
+        divImgName.id = "WRAPDIV"
+        divImgName.className = "center";
         img.id = "IMG";
         divName.id = "NAME"
+
         divContents.id ="CONTENTS"
 
         if (this.dataFile) {
             wrapper.innerHTML = ""
 
             img.src = this.dataFile[this.config.commNum].img;
-            wrapper.appendChild(img);
-            // wrapper.innerHTML = "[" + this.config.commNum + "] ";
+            divImgName.appendChild(img);
             divName.innerHTML += this.dataFile[this.config.commNum].writter;
+            divImgName.appendChild(divName)
+
             divContents.innerHTML += " - " + this.dataFile[this.config.commNum].contents;
 
-            wrapper.appendChild(divName);
+            wrapper.appendChild(divImgName);
             wrapper.appendChild(divContents);
 
         } else {
