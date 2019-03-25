@@ -45,10 +45,12 @@ Module.register('MMM-CommunityOTSK', {
         var div3 = document.createElement("div");
 
         var p = document.createElement("p");
+        p.innerHTML="";
         var img = document.createElement("img");
 
         if (this.dataFile) {
             img.src = this.dataFile[this.config.commNum].img;
+            
             p.appendChild(img);
             p.innerHTML= this.dataFile[this.config.commNum].writter;
             
