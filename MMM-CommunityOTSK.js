@@ -42,6 +42,7 @@ Module.register('MMM-CommunityOTSK', {
         
         var div1 = document.createElement("div");
         var div2 = document.createElement("div");
+        div2.id = "DIV2";
         var div3 = document.createElement("div");
 
         var div2_img = document.createElement("div");
