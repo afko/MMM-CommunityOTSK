@@ -38,11 +38,16 @@ Module.register('MMM-CommunityOTSK', {
     getDom: function () {
 
         var wrapper = document.createElement("div");
-        var img = document.createElement("img");
-        wrapper.id = "COMM";
-        img.id = 'IMG';
 
-      
+        var img = document.createElement("img");
+        var divName = document.createElement("div");
+        var divContents = document.createElement("div");
+
+        wrapper.id = "COMM";
+    
+        img.id = "IMG";
+        divName = "NAME"
+        divContents ="CONTENTS"
 
         if (this.dataFile) {
             wrapper.innerHTML = ""
@@ -50,8 +55,12 @@ Module.register('MMM-CommunityOTSK', {
             img.src = this.dataFile[this.config.commNum].img;
             wrapper.appendChild(img);
             // wrapper.innerHTML = "[" + this.config.commNum + "] ";
-            wrapper.innerHTML += this.dataFile[this.config.commNum].writter;
-            wrapper.innerHTML += " - " + this.dataFile[this.config.commNum].contents;
+            divName.innerHTML += this.dataFile[this.config.commNum].writter;
+            divContents.innerHTML += " - " + this.dataFile[this.config.commNum].contents;
+
+            wrapper.appendChild(divName);
+            wrapper.appendChild(divContents);
+
         } else {
             wrapper.innerHTML = "No data";
         }

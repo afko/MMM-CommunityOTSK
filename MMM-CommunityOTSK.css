@@ -1,10 +1,16 @@
 #COMM {
    font-size: 0.9rem; 
-   width: 400px;
+   width: 300px;
+   height: 400px;
    overflow:hidden;
    word-wrap:break-word;
 }
 
 #IMG {
-   border-radius:0.5em;
+   border-radius: 1em;
+}
+
+#NAME {
+
+   background-color: white;
 }
