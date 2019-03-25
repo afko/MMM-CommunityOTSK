@@ -11,22 +11,31 @@ def toJson(comm_dict):
 
 # chrome is executed in background
 options = webdriver.ChromeOptions()
-options.add_argument(r"user-data-dir=path/to/your/chrome/default")
+options.add_argument(r"user-data-dir=/home/pi/.config/chromium/Default")
 options.add_argument('headless')
 
 chrome = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", chrome_options=options)
 chrome.implicitly_wait(10)
-chrome.get("https://media.daum.net/ranking/kkomkkom/") # crawling site
+chrome.get("https://your_site") # crawling site
 chrome.implicitly_wait(3)
 
 temp_dict = {}
 
-for i in range(1, 11):
-    title= chrome.find_element_by_xpath('//*[@id="mArticle"]/div[2]/ul[3]/li['+str(i)+']/div[2]/strong/a').text
-    link= chrome.find_element_by_xpath('//*[@id="mArticle"]/div[2]/ul[3]/li['+str(i)+']/div[2]/strong/a').get_attribute('href')
-    info_news= chrome.find_element_by_xpath('//*[@id="mArticle"]/div[2]/ul[3]/li['+str(i)+']/div[2]/strong/span').text
-    temp_dict[i] = {'title': title, 'info_news':info_news, 'link':link}
-    
+#img
+imgList = chrome.find_elements_by_class_name('MqU2J')
+imgSrcList = []
+for i in imgList:
+        imgSrcList.append(i.get_attribute("src"))
+#name
+nameList = chrome.find_elements_by_class_name('sXku1c')
+
+#contents
+contentsList = chrome.find_elements_by_class_name('jVjeQd')
+
+if len(contentsList) == len(nameList):
+        for i in range(0, len(nameList)):
+                temp_dict[i] = {'img': imgSrcList[i], 'writter':nameList[i].text, 'contents':contentsList[i].text}
+
 toJson(temp_dict)
 
 # session end

@@ -1,4 +1,4 @@
-#WRAPDIV{
+/*#WRAPDIV{
    display: inline;
 }
 
@@ -19,4 +19,13 @@
 #NAME {
    font-size: 1.5rem;
    font-weight: bold;
+}*/
+
+
+ul {
+   display: inline-block
+}
+
+li {
+   list-style-type: none;
 }
