@@ -39,22 +39,21 @@ Module.register('MMM-CommunityOTSK', {
     getDom: function () {
 
         var wrapper = document.createElement("div");
-        
+
         var div1 = document.createElement("div");
         var div2 = document.createElement("div");
         var div3 = document.createElement("div");
 
-        var p = document.createElement("p");
-        p.innerHTML="";
+        var p1 = document.createElement("p");
+        var p2 = document.createElement("p");
         var img = document.createElement("img");
 
         if (this.dataFile) {
             img.src = this.dataFile[this.config.commNum].img;
-            
-            
-            p.innerHTML= this.dataFile[this.config.commNum].writter;
-            p.appendChild(img);
-            
+
+            p1.appendChild(img);
+            p2.innerHTML = this.dataFile[this.config.commNum].writter;
+
 
             div1.innerHTML = "** OTSK Community Notice **";
             div2.innerHTML = "";
@@ -62,8 +61,8 @@ Module.register('MMM-CommunityOTSK', {
 
             div3.innerHTML = "This is div3";
 
-            
-            
+
+
 
             wrapper.appendChild(div1);
             wrapper.appendChild(div2);
