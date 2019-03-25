@@ -3,7 +3,6 @@
 }
 
 #DIV3 {
-   width: 300px;
    height: 400px;
    overflow: hidden;
    line-break: inherit;
@@ -11,11 +10,12 @@
 }
 
 #IMG {
-   border-radius: 1rem;
+   border-radius: 1.5rem;
 }
 
 .center {
    margin: auto;
    padding: 5px;
    text-align: center;
+   width: 50%;
 }

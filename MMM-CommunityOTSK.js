@@ -54,7 +54,7 @@ Module.register('MMM-CommunityOTSK', {
 
         if (this.dataFile) {
             img.src = this.dataFile[this.config.commNum].img;
-            pWritter = document.createTextNode(this.dataFile[this.config.commNum].writter);
+            pWritter = "  " + document.createTextNode(this.dataFile[this.config.commNum].writter);
             p.appendChild(img);
             p.appendChild(pWritter);
 
