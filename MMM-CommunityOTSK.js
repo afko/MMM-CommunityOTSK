@@ -39,59 +39,42 @@ Module.register('MMM-CommunityOTSK', {
     getDom: function () {
 
         var wrapper = document.createElement("div");
-        
+        wrapper.id = "wrapId";
+
+        var headDiv = document.createElement("div");
+        headDiv.id = "headId";
+        wrapper.childAppend(headDiv);
+        var h1 = document.createElement("H1");
+
+        header.childAppend(h1);
+
+        var second = document.createElement("div");
+        second.id = "secId";
+        var li = document.createElement("li");
+        var ul1 = document.createElement("ul");
+        var img = document.createElement("img");
+        var ul2 = document.createElement("ul");
+        var ul2Div = document.createElement("div");
+        ul2Div.className = "profile_name";
+        var span = document.createElement("span");
+        wrapper.childAppend(second);
+        second.childAppend(li);
+        li.childAppend(ul1);
+        li.childAppend(ul2);
+        ul1.childAppend(img);
+        ul2.childAppend(ul2Div);
+        ul2Div.childAppend(span);
+
+        var contents = document.createElement("div");
+        contents.id = "CONTENTS";
+        wrapper.childAppend(contents);
+
         if (this.dataFile) {
-            wrapper.innerHTML = "HIHIHI";
-            wrapper.id = "WRAPPER";
-
-
-            var header = document.createElement("div");
-            header.id = "HEADER";
-            var h1 = document.createElement("h1");
-            h1.className = "title";
-            wrapper.childAppend(header);
-            header.childAppend(h1);
-
-            var second = document.createElement("div");
-            second.id = "SECOND";
-            var li = document.createElement("li");
-            var ul1 = document.createElement("ul");
-            var img = document.createElement("img");
-            var ul2 = document.createElement("ul");
-            var ul2Div = document.createElement("div");
-            ul2Div.className = "profile_name";
-            var span = document.createElement("span");
-            wrapper.childAppend(second);
-            second.childAppend(li);
-            li.childAppend(ul1);
-            li.childAppend(ul2);
-            ul1.childAppend(img);
-            ul2.childAppend(ul2Div);
-            ul2Div.childAppend(span);
-
-            var contents = document.createElement("div");
-            contents.id = "CONTENTS";
-            wrapper.childAppend(contents);
-
-            // var divImgName = document.createElement("div");
-            // var img = document.createElement("img");
-            // var divName = document.createElement("div");
-            // var divContents = document.createElement("div");
-
-            // wrapper.id = "COMM";
-
-            // divImgName.id = "WRAPDIV"
-            // img.id = "IMG";
-            // divName.id = "NAME"
-
-            // divContents.id ="CONTENTS"
-
-
-
-            h1.innerHTML = "OTSK Community Notice";
+            
+            h1.innerText = "OTSK Community Notice";
             img.src = this.dataFile[this.config.commNum].img;
-            span.innerHTML = this.dataFile[this.config.commNum].writter;
-            contents.innerHTML = this.dataFile[this.config.commNum].contents;
+            span.innerText = this.dataFile[this.config.commNum].writter;
+            contents.innerText = this.dataFile[this.config.commNum].contents;
 
         } else {
             wrapper.innerHTML = "No data";
