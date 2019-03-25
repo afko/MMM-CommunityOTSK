@@ -9,7 +9,7 @@ Module.register('MMM-CommunityOTSK', {
     defaults: {
         updateNewsInterval: 3 * 1000, // 3 secs 
         fadeSpeed: 4000,
-        updateInterval: 4 * 1000, // 4 secs
+        updateInterval: 10 * 1000, // 4 secs
         commNum: 0
     },
 
