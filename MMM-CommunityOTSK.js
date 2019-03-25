@@ -44,31 +44,27 @@ Module.register('MMM-CommunityOTSK', {
         var div2 = document.createElement("div");
         div2.id = "DIV2";
         var div3 = document.createElement("div");
+        div3.id = "DIV3";
 
-        var p1 = document.createElement("p");
-        // var p2 = document.createElement("p");
+        var p = document.createElement("p");
+        p.className = "center";
         var img = document.createElement("img");
+        img.id = "IMG";
 
         if (this.dataFile) {
             img.src = this.dataFile[this.config.commNum].img;
             pWritter = document.createTextNode(this.dataFile[this.config.commNum].writter);
-            p1.appendChild(img);
-            p1.appendChild(pWritter);
+            p.appendChild(img);
+            p.appendChild(pWritter);
 
             div1.innerHTML = "** OTSK Community Notice **";
-            div2.appendChild(p1);
+            div2.appendChild(p);
 
-            div3.innerHTML = "This is div3";
-
-
-
+            div3.innerHTML = this.dataFile[this.config.commNum].contents;
 
             wrapper.appendChild(div1);
             wrapper.appendChild(div2);
             wrapper.appendChild(div3);
-            // h1.innerText = "OTSK Community Notice";
-            // span.innerText = this.dataFile[this.config.commNum].writter;
-            // contents.innerText = this.dataFile[this.config.commNum].contents;
 
         } else {
             wrapper.innerHTML = "No data";

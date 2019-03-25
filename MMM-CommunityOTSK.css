@@ -1,3 +1,20 @@
 #DIV2 {
    display: inline;
 }
+
+#DIV3 {
+   width : 300px;
+   height: 400px;
+   overflow: hidden;
+   line-break: inherit;
+}
+
+#IMG {
+   border-radius: 1rem;
+}
+
+.center {
+   margin: auto;
+   padding: 10px;
+ }
+
