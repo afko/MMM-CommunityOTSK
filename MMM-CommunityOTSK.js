@@ -32,58 +32,62 @@ Module.register('MMM-CommunityOTSK', {
     getStyles: function () {
         return [
             "font-awesome.css",
-            "MMM-CommunityOTSK.css"];
+            "MMM-CommunityOTSK.css"
+        ];
     },
 
     getDom: function () {
 
         var wrapper = document.createElement("div");
-        wrapper.id = "WRAPPER";
-
-
-        var header = document.createElement("div");
-        header.id = "HEADER";
-        var h1 = document.createElement("h1");
-        h1.className = "title";
-        wrapper.childAppend(header);
-        header.childAppend(h1);
-
-        var second = document.createElement("div");
-        second.id = "SECOND";
-        var li = document.createElement("li");
-        var ul1 = document.createElement("ul");
-        var img = document.createElement("img");
-        var ul2 = document.createElement("ul");
-        var ul2Div = document.createElement("div");
-        ul2Div.className = "profile_name";
-        var span = document.createElement("span");
-        wrapper.childAppend(second);
-        second.childAppend(li);
-        li.childAppend(ul1);
-        li.childAppend(ul2);
-        ul1.childAppend(img);
-        ul2.childAppend(ul2Div);
-        ul2Div.childAppend(span);
         
-        var contents = document.createElement("div");
-        contents.id = "CONTENTS";
-        wrapper.childAppend(contents);
-        
-        // var divImgName = document.createElement("div");
-        // var img = document.createElement("img");
-        // var divName = document.createElement("div");
-        // var divContents = document.createElement("div");
-
-        // wrapper.id = "COMM";
-
-        // divImgName.id = "WRAPDIV"
-        // img.id = "IMG";
-        // divName.id = "NAME"
-
-        // divContents.id ="CONTENTS"
-
         if (this.dataFile) {
-            
+            wrapper.innerHTML = "HIHIHI";
+            wrapper.id = "WRAPPER";
+
+
+            var header = document.createElement("div");
+            header.id = "HEADER";
+            var h1 = document.createElement("h1");
+            h1.className = "title";
+            wrapper.childAppend(header);
+            header.childAppend(h1);
+
+            var second = document.createElement("div");
+            second.id = "SECOND";
+            var li = document.createElement("li");
+            var ul1 = document.createElement("ul");
+            var img = document.createElement("img");
+            var ul2 = document.createElement("ul");
+            var ul2Div = document.createElement("div");
+            ul2Div.className = "profile_name";
+            var span = document.createElement("span");
+            wrapper.childAppend(second);
+            second.childAppend(li);
+            li.childAppend(ul1);
+            li.childAppend(ul2);
+            ul1.childAppend(img);
+            ul2.childAppend(ul2Div);
+            ul2Div.childAppend(span);
+
+            var contents = document.createElement("div");
+            contents.id = "CONTENTS";
+            wrapper.childAppend(contents);
+
+            // var divImgName = document.createElement("div");
+            // var img = document.createElement("img");
+            // var divName = document.createElement("div");
+            // var divContents = document.createElement("div");
+
+            // wrapper.id = "COMM";
+
+            // divImgName.id = "WRAPDIV"
+            // img.id = "IMG";
+            // divName.id = "NAME"
+
+            // divContents.id ="CONTENTS"
+
+
+
             h1.innerHTML = "OTSK Community Notice";
             img.src = this.dataFile[this.config.commNum].img;
             span.innerHTML = this.dataFile[this.config.commNum].writter;
@@ -93,10 +97,10 @@ Module.register('MMM-CommunityOTSK', {
             wrapper.innerHTML = "No data";
         }
 
-        
+
         if (this.config.commNum >= 5) this.config.commNum = 1;
         else this.config.commNum += 1;
-        
+
         return wrapper;
     }
 });
