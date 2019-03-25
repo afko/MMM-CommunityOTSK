@@ -46,7 +46,6 @@ Module.register('MMM-CommunityOTSK', {
 
         if (this.dataFile) {
             wrapper.innerHTML = ""
-// {/* <img class="MqU2J" height="36" width="36" src="https://lh3.googleusercontent.com/a/default-user=s45-p-k-rw-no" alt=""> */}
 
             img.src = this.dataFile[this.config.commNum].img;
             wrapper.appendChild(img);
@@ -58,7 +57,7 @@ Module.register('MMM-CommunityOTSK', {
         }
 
         
-        if (this.config.commNum >= 2) this.config.commNum = 1;
+        if (this.config.commNum >= 5) this.config.commNum = 1;
         else this.config.commNum += 1;
         
         return wrapper;
