@@ -44,10 +44,10 @@ Module.register('MMM-CommunityOTSK', {
         var divContents = document.createElement("div");
 
         wrapper.id = "COMM";
-    
+        wrapper.className = "center";
         img.id = "IMG";
-        divName = "NAME"
-        divContents ="CONTENTS"
+        divName.id = "NAME"
+        divContents.id ="CONTENTS"
 
         if (this.dataFile) {
             wrapper.innerHTML = ""
