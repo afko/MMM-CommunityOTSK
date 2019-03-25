@@ -40,12 +40,13 @@ Module.register('MMM-CommunityOTSK', {
         var wrapper = document.createElement("div");
         var img = document.createElement("img");
         wrapper.id = "COMM";
+        img.id = 'IMG';
 
       
 
         if (this.dataFile) {
             wrapper.innerHTML = ""
-{/* <img class="MqU2J" height="36" width="36" src="https://lh3.googleusercontent.com/a/default-user=s45-p-k-rw-no" alt=""> */}
+// {/* <img class="MqU2J" height="36" width="36" src="https://lh3.googleusercontent.com/a/default-user=s45-p-k-rw-no" alt=""> */}
 
             img.src = this.dataFile[this.config.commNum].img;
             wrapper.appendChild(img);
