@@ -51,9 +51,9 @@ Module.register('MMM-CommunityOTSK', {
         if (this.dataFile) {
             img.src = this.dataFile[this.config.commNum].img;
             
-            p.appendChild(img);
-            p.innerHTML= this.dataFile[this.config.commNum].writter;
             
+            p.innerHTML= this.dataFile[this.config.commNum].writter;
+            p.appendChild(img);
             
 
             div1.innerHTML = "** OTSK Community Notice **";
