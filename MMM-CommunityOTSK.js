@@ -51,7 +51,9 @@ Module.register('MMM-CommunityOTSK', {
             div2.innerHTML = "This is div2";
             div3.innerHTML = "This is div3";
 
-            wrapper.appendChild(div1, div2, div3);
+            wrapper.appendChild(div1);
+            wrapper.appendChild(div2);
+            wrapper.appendChild(div3);
             // h1.innerText = "OTSK Community Notice";
             // img.src = this.dataFile[this.config.commNum].img;
             // span.innerText = this.dataFile[this.config.commNum].writter;
