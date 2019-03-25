@@ -49,6 +49,7 @@ Module.register('MMM-CommunityOTSK', {
 
         var p = document.createElement("p");
         p.className = "center";
+        p.id = "PP"
         var img = document.createElement("img");
         img.id = "IMG";
 

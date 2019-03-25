@@ -1,13 +1,18 @@
 #DIV2 {
    display: inline;
-   background-color: blue;
+
 }
 
 #DIV3 {
+   width: 300px;
    height: 400px;
    overflow: hidden;
    line-break: inherit;
    font-size: 0.9rem;
+}
+
+#PP {
+   background-color: blue;
 }
 
 #IMG {
