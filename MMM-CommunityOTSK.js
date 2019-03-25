@@ -45,7 +45,6 @@ Module.register('MMM-CommunityOTSK', {
         var divContents = document.createElement("div");
 
         wrapper.id = "COMM";
-        wrapper.className = "center";
 
         divImgName.id = "WRAPDIV"
         divImgName.className = "center";
