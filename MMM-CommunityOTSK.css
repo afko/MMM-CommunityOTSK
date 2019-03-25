@@ -5,6 +5,7 @@
 }
 
 #COMM {
+   position: relative;
    font-size: 0.9rem; 
    width: 300px;
    height: 400px;

@@ -61,7 +61,7 @@ Module.register('MMM-CommunityOTSK', {
             divName.innerHTML += this.dataFile[this.config.commNum].writter;
             divImgName.appendChild(divName)
 
-            divContents.innerHTML += " - " + this.dataFile[this.config.commNum].contents;
+            divContents.innerHTML += this.dataFile[this.config.commNum].contents;
 
             wrapper.appendChild(divImgName);
             wrapper.appendChild(divContents);
