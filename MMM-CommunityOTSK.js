@@ -9,7 +9,7 @@ Module.register('MMM-CommunityOTSK', {
     defaults: {
         updateNewsInterval: 3 * 1000, // 3 secs 
         fadeSpeed: 4000,
-        updateInterval: 15 * 1000, // 10 secs
+        updateInterval: 20 * 1000, // 10 secs
         commNum: 0
     },
 
@@ -89,14 +89,16 @@ Module.register('MMM-CommunityOTSK', {
             wrapper.appendChild(div2);
             wrapper.appendChild(div3);
 
-
-            setInterval(function () {
-                document.getElementById("DIV3").scrollBy({
-                    top: 50, // could be negative value
-                    left: 0,
-                    behavior: 'smooth'
-                });
-            }, 2000)
+            setTimeout(function(){
+                setInterval(function () {
+                    document.getElementById("DIV3").scrollBy({
+                        top: 50, // could be negative value
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                }, 2000)
+            }, 2000);
+           
 
         } else {
             wrapper.innerHTML = "No data";
