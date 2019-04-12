@@ -100,14 +100,14 @@ Module.register('MMM-CommunityOTSK', {
 
             setInterval(function () {
                 
-                setTimeout(function () {}, 2000)
+                setTimeout(function () {}, 3000);
                 document.getElementById("DIV3").scrollBy({
                     top: 40, // could be negative value
                     left: 0,
                     behavior: 'smooth'
                 });
 
-            }, 500)
+            }, 500);
 
 
 
