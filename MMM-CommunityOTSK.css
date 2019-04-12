@@ -18,12 +18,13 @@
 }
 
 #DIV3 {
-   position: relative;
    color: thistle;
    width: 100% - 10px;
    height: 100% - 30px;
+   white-space:normal;
+   word-break:normal;
    overflow: hidden;
-   text-overflow: ellipsis;
+      
    line-break: inherit;
    font-size: 1rem;
    line-height: 1.4em;
