@@ -57,19 +57,19 @@ Module.register('MMM-CommunityOTSK', {
         img.id = "IMG";
 
 
-        var position = 0;
+        // var position = 0;
 
-        function scroller() {
-            if (position != 240) {
-                position++;
-                scroll(0, position);
-                clearTimeout(timer);
-                var timer = setTimeout("scroller()", 40);
-                timer;
-            }
-        }
+        // function scroller() {
+        //     if (position != 240) {
+        //         position++;
+        //         scroll(0, position);
+        //         clearTimeout(timer);
+        //         var timer = setTimeout("scroller()", 40);
+        //         timer;
+        //     }
+        // }
 
-        div3.onload = scroller();
+        // div3.onload = scroller();
 
         if (this.dataFile) {
             img.src = this.dataFile[this.config.commNum].img;
