@@ -2,8 +2,11 @@
    width: 300px;
    border: 0.5px solid grey;
    padding: 5px;
+   border-radius: 1.2rem;
+   height: 400px;
 }
 #DIV1 {
+   color: magenta;
    font-size: 1.3rem;
 
 }
