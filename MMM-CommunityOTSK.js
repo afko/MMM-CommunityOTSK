@@ -21,8 +21,7 @@ Module.register('MMM-CommunityOTSK', {
         if (notification === "DATA") {
             this.dataFile = payload;
             this.updateDom();
-            var divdiv = document.getElementById("DIV3");
-            divdiv.scrollTop = divdiv.scrollHeight;
+            
         }
     },
 

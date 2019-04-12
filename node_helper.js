@@ -9,7 +9,9 @@ module.exports = NodeHelper.create({
 			this.config = payload;
 			this.readData();
     			setInterval(() => {
-        			this.readData();
+					this.readData();
+					var divdiv = document.getElementById("DIV3");
+					divdiv.scrollTop = divdiv.scrollHeight;
     			}, this.config.updateInterval);
 		}
 	},
