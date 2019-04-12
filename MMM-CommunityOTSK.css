@@ -18,12 +18,14 @@
 }
 
 #DIV3 {
+   color: thistle;
    width: 100%;
    overflow: hidden;
    line-break: inherit;
    font-size: 1rem;
    overflow-y: scroll;
    line-height: 1.4em;
+   padding: 5px;
 }
 
 #PP {
