@@ -20,17 +20,7 @@ Module.register('MMM-CommunityOTSK', {
     socketNotificationReceived: function (notification, payload) {
         if (notification === "DATA") {
             this.dataFile = payload;
-            setInterval(function () {
-                this.updateDom();
-                setTimeout(function () {}, 2000)
-                document.getElementById("DIV3").scrollBy({
-                    top: 40, // could be negative value
-                    left: 0,
-                    behavior: 'smooth'
-                });
-            }, 2500)
-
-
+            this.updateDom();
         }
     },
 
@@ -108,6 +98,16 @@ Module.register('MMM-CommunityOTSK', {
             //     });
             // }, 2500)
 
+            setInterval(function () {
+                
+                setTimeout(function () {}, 2000)
+                document.getElementById("DIV3").scrollBy({
+                    top: 40, // could be negative value
+                    left: 0,
+                    behavior: 'smooth'
+                });
+
+            }, 500)
 
 
 
