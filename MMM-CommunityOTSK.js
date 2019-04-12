@@ -107,7 +107,7 @@ Module.register('MMM-CommunityOTSK', {
         }
 
 
-        if (this.config.commNum >= 5) this.config.commNum = 0;
+        if (this.config.commNum >= 5) this.config.commNum = 1;
         else this.config.commNum += 1;
 
         return wrapper;
