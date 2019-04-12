@@ -18,6 +18,7 @@
 }
 
 #DIV3 {
+   position: relative;
    color: thistle;
    width: 100% - 10px;
    height: 100% - 30px;
