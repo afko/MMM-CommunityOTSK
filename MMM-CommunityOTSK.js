@@ -97,6 +97,8 @@ Module.register('MMM-CommunityOTSK', {
             //         behavior: 'smooth'
             //     });
             // }, 2500)
+            var interval = 3000;
+            var timeout = 3000;
 
             setInterval(function () {
 
@@ -106,8 +108,9 @@ Module.register('MMM-CommunityOTSK', {
                         left: 0,
                         behavior: 'smooth'
                     });
-                }, 3000);
-            }, 2500);
+                }, interval);
+
+            }, timeout);
 
 
 
