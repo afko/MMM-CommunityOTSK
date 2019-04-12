@@ -90,14 +90,14 @@ Module.register('MMM-CommunityOTSK', {
             wrapper.appendChild(div3);
 
 
-            setTimeout(function () {}, 2000)
-            setInterval(function () {
-                document.getElementById("DIV3").scrollBy({
-                    top: 40, // could be negative value
-                    left: 0,
-                    behavior: 'smooth'
-                });
-            }, 2500)
+            // setTimeout(function () {}, 2000)
+            // setInterval(function () {
+            //     document.getElementById("DIV3").scrollBy({
+            //         top: 40, // could be negative value
+            //         left: 0,
+            //         behavior: 'smooth'
+            //     });
+            // }, 2500)
 
 
 
