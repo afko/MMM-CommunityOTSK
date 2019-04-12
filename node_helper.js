@@ -10,8 +10,6 @@ module.exports = NodeHelper.create({
 			this.readData();
     			setInterval(() => {
 					this.readData();
-					var divdiv = document.getElementById("DIV3");
-					divdiv.scrollTop = divdiv.scrollHeight;
     			}, this.config.updateInterval);
 		}
 	},
