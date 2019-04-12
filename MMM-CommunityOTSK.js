@@ -107,7 +107,7 @@ Module.register('MMM-CommunityOTSK', {
                         behavior: 'smooth'
                     });
                 }, 3000);
-            }, 500);
+            }, 2500);
 
 
 
