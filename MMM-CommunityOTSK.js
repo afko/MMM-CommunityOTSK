@@ -91,7 +91,7 @@ Module.register('MMM-CommunityOTSK', {
 
 
             setInterval(function () {
-                document.getElementById("news").scrollBy({
+                document.getElementById("DIV3").scrollBy({
                     top: 100, // could be negative value
                     left: 0,
                     behavior: 'smooth'
