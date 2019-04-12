@@ -9,7 +9,7 @@ Module.register('MMM-CommunityOTSK', {
     defaults: {
         updateNewsInterval: 3 * 1000, // 3 secs 
         fadeSpeed: 4000,
-        updateInterval: 10 * 1000, // 10 secs
+        updateInterval: 15 * 1000, // 10 secs
         commNum: 0
     },
 
@@ -92,11 +92,11 @@ Module.register('MMM-CommunityOTSK', {
 
             setInterval(function () {
                 document.getElementById("DIV3").scrollBy({
-                    top: 100, // could be negative value
+                    top: 50, // could be negative value
                     left: 0,
                     behavior: 'smooth'
                 });
-            }, 1000)
+            }, 2000)
 
         } else {
             wrapper.innerHTML = "No data";
