@@ -99,14 +99,14 @@ Module.register('MMM-CommunityOTSK', {
             // }, 2500)
 
             setInterval(function () {
-                
-                setTimeout(function () {}, 3000);
-                document.getElementById("DIV3").scrollBy({
-                    top: 40, // could be negative value
-                    left: 0,
-                    behavior: 'smooth'
-                });
 
+                setTimeout(function () {
+                    document.getElementById("DIV3").scrollBy({
+                        top: 40, // could be negative value
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                }, 3000);
             }, 500);
 
 
