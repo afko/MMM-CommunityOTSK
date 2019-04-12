@@ -20,6 +20,8 @@ Module.register('MMM-CommunityOTSK', {
     socketNotificationReceived: function (notification, payload) {
         if (notification === "DATA") {
             this.dataFile = payload;
+            var divdiv = document.getElementById("DIV3");
+            divdiv.scrollTop = divdiv.scrollHeight;
             this.updateDom();
             
         }
