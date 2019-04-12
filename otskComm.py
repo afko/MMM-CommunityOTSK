@@ -35,9 +35,9 @@ contentsList = chrome.find_elements_by_class_name('jVjeQd')
 
 if len(contentsList) == len(nameList):
         for i in range(0, len(nameList)):
-                temp_dict[i] = {'img': imgSrcList[i], 'writter':nameList[i].text, 'contents':contentsList[i].text}
+                temp_dict[i+1] = {'img': imgSrcList[i+1], 'writter':nameList[i+1].text, 'contents':contentsList[i+1].text}
 
-for i in range(0, len(temp_dict)):
+for i in range(1, len(temp_dict)):
     temp_dict[i]['contents'] = temp_dict[i]['contents'].replace("\n", "<br>")
     
 
