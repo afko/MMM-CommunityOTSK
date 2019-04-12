@@ -90,8 +90,8 @@ Module.register('MMM-CommunityOTSK', {
             wrapper.appendChild(div3);
 
 
-            setInterval(function () {}, 2000)
-            setTimeout(function () {
+            setTimeout(function () {}, 2000)
+            setInterval(function () {
                 document.getElementById("DIV3").scrollBy({
                     top: 40, // could be negative value
                     left: 0,
