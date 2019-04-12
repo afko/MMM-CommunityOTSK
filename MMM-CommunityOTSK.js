@@ -21,6 +21,8 @@ Module.register('MMM-CommunityOTSK', {
         if (notification === "DATA") {
             this.dataFile = payload;
             this.updateDom();
+            var divdiv = document.getElementById("DIV3");
+            divdiv.scrollTop = divdiv.scrollHeight;
         }
     },
 
@@ -61,7 +63,7 @@ Module.register('MMM-CommunityOTSK', {
             p.appendChild(img);
             p.appendChild(pWritter);
 
-            div1.innerHTML = "* OTSK Community Notice *" + " #"+this.config.commNum ;
+            div1.innerHTML = "* OTSK Community Notice *" + " #" + this.config.commNum;
             div2.appendChild(p);
 
             div3.innerHTML = this.dataFile[this.config.commNum].contents;
@@ -69,6 +71,9 @@ Module.register('MMM-CommunityOTSK', {
             wrapper.appendChild(div1);
             wrapper.appendChild(div2);
             wrapper.appendChild(div3);
+
+          
+
 
         } else {
             wrapper.innerHTML = "No data";
