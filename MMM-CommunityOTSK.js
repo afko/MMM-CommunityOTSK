@@ -89,16 +89,18 @@ Module.register('MMM-CommunityOTSK', {
             wrapper.appendChild(div2);
             wrapper.appendChild(div3);
 
-            setTimeout(function(){
-                setInterval(function () {
+
+            setInterval(function () {
+                setTimeout(function () {
                     document.getElementById("DIV3").scrollBy({
                         top: 40, // could be negative value
                         left: 0,
                         behavior: 'smooth'
                     });
-                }, 2500)
-            }, 4000);
-           
+                }, 3000);
+            }, 2500)
+
+
 
         } else {
             wrapper.innerHTML = "No data";
