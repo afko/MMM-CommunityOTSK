@@ -18,10 +18,9 @@
 }
 
 #DIV3 {
-   background-color: white;
    color: thistle;
    width: 100% - 10px;
-   height: 100% - 150px;
+   height: 100% - 180px;
    white-space:normal;
    word-break:normal;
    overflow: hidden;
