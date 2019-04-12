@@ -92,12 +92,12 @@ Module.register('MMM-CommunityOTSK', {
             setTimeout(function(){
                 setInterval(function () {
                     document.getElementById("DIV3").scrollBy({
-                        top: 50, // could be negative value
+                        top: 40, // could be negative value
                         left: 0,
                         behavior: 'smooth'
                     });
-                }, 2000)
-            }, 2000);
+                }, 2500)
+            }, 4000);
            
 
         } else {
