@@ -18,10 +18,11 @@
 }
 
 #DIV3 {
+   position: relative;
    border: 0.1px solid grey;
    color: thistle;
    width: 100% - 10px;
-   height: 100% - 180px;
+   height: 320px;
    white-space:normal;
    word-break:normal;
    overflow: hidden;
