@@ -22,9 +22,9 @@
    width: 100% - 10px;
    height: 100% - 30px;
    overflow: hidden;
+   text-overflow: ellipsis;
    line-break: inherit;
    font-size: 1rem;
-   overflow-y: scroll;
    line-height: 1.4em;
    padding: 5px;
 }
