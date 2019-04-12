@@ -9,7 +9,7 @@ Module.register('MMM-CommunityOTSK', {
     defaults: {
         updateNewsInterval: 3 * 1000, // 3 secs 
         fadeSpeed: 4000,
-        updateInterval: 10 * 1000, // 4 secs
+        updateInterval: 10 * 1000, // 10 secs
         commNum: 0
     },
 
@@ -75,7 +75,7 @@ Module.register('MMM-CommunityOTSK', {
         }
 
 
-        if (this.config.commNum >= 5) this.config.commNum = 1;
+        if (this.config.commNum >= 5) this.config.commNum = 0;
         else this.config.commNum += 1;
 
         return wrapper;
