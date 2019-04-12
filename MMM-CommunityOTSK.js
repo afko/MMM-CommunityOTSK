@@ -21,7 +21,7 @@ Module.register('MMM-CommunityOTSK', {
         if (notification === "DATA") {
             this.dataFile = payload;
             this.updateDom();
-            
+
         }
     },
 
@@ -56,6 +56,21 @@ Module.register('MMM-CommunityOTSK', {
         var img = document.createElement("img");
         img.id = "IMG";
 
+
+        var position = 0;
+
+        function scroller() {
+            if (position != 240) {
+                position++;
+                scroll(0, position);
+                clearTimeout(timer);
+                var timer = setTimeout("scroller()", 40);
+                timer;
+            }
+        }
+
+        div3.onload = scroller();
+
         if (this.dataFile) {
             img.src = this.dataFile[this.config.commNum].img;
             pWritter = document.createTextNode(" " + this.dataFile[this.config.commNum].writter);
@@ -71,7 +86,7 @@ Module.register('MMM-CommunityOTSK', {
             wrapper.appendChild(div2);
             wrapper.appendChild(div3);
 
-          
+
 
 
         } else {
