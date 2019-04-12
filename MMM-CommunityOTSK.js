@@ -27,14 +27,8 @@ Module.register('MMM-CommunityOTSK', {
 
     getScripts: function () {
 
-        setInterval(function () {
-            document.getElementById("news").scrollBy({
-                top: 100, // could be negative value
-                left: 0,
-                behavior: 'smooth'
-            });
-        }, 1000)
-        
+
+
         return [
             '//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'
         ];
@@ -96,7 +90,13 @@ Module.register('MMM-CommunityOTSK', {
             wrapper.appendChild(div3);
 
 
-
+            setInterval(function () {
+                document.getElementById("news").scrollBy({
+                    top: 100, // could be negative value
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            }, 1000)
 
         } else {
             wrapper.innerHTML = "No data";
